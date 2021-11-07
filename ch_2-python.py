@@ -72,3 +72,25 @@ random.sample(lottery, 6)
 
 ## with replacement
 [random.choice(lottery) for _ in range(6)]
+
+'''
+REGEX
+re.match checks whether the beginning
+of a string matches a regular expression, while re.search checks whether
+any part of a string matches a regular expression.
+'''
+import re
+re.match('a', 'cat') # not return if is False
+re.search('d', 'atd')
+
+'''
+ZIP
+zip function transforms multiple iterables into a single iterable of tuples
+'''
+list1 = ['a', 'b', 'c']
+list2 = [1, 2, 3]
+list(zip(list1, list2)) # [('a', 1), ('b', 2), ('c', 3)]
+
+# for unpacking
+letters, numbers = zip(*pairs)
+
